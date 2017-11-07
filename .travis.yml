@@ -12,3 +12,9 @@ script: # the build step
    - node_modules/.bin/ng test --colors=false --progress=false --single-run
 
 
+cache:
+  yarn: true
+  directories:
+     - ./node_modules
+     - ./.chrome/chromium
+
